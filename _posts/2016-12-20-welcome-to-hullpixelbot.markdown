@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Welcome to HullPixelbot!"
-date:   2016-12-20 15:27:06 +0000
+title:  "Welcome to HullPixelbot"
+date:   2017-02-01 19:44:00 +0000
 categories: hullpixelbot
 ---
 ![A circle of HullPixelbots]({{ site.url }}/assets/images/botCircle.jpg)
@@ -16,3 +16,7 @@ We’ve got people trying to make a robot that will seek out the lightest part o
 
 
 But we want to make art with it. We want to get at least 100 Hull Pixelbots into an arena and set them running. Robotics researchers call this “Investigating Emergent Behaviour”. We call it “seeing what happens”. We’ve got plans to make one big “Robot Network” to choreograph the event and we might even add music. We’re planning events as part of the Hull City of Culture 2017. And we are meeting up every couple of weeks to build up our robot army. You can come along too.
+
+The best place to start is the overview in the documentation folder which you can find [here](https://github.com/HullPixelbot/Documentation).
+
+You can follw [@hullpixelbot](https://twitter.com/hullpixelbot) for pixelbot news and of course we need to have a plug for the blog from [Rob Miles](http://www.robmiles.com) at this point.
