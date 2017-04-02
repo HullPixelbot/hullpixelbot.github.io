@@ -15,8 +15,14 @@ You can use it anywhere you need a tiny, mobile, pixel. It’s a great way to ex
 We’ve got people trying to make a robot that will seek out the lightest part of a room, others trying to map out an area and some just getting together for the fun of building something. It is a great way to get started working with electronics, computing and robotics.
 
 
-But we want to make art with it. We want to get at least 100 Hull Pixelbots into an arena and set them running. Robotics researchers call this “Investigating Emergent Behaviour”. We call it “seeing what happens”. We’ve got plans to make one big “Robot Network” to choreograph the event and we might even add music. We’re planning events as part of the Hull City of Culture 2017. And we are meeting up every couple of weeks to build up our robot army. You can come along too.
+But we want to make art with it. We want to get at least 100 Hull Pixelbots into an arena and set them running. Robotics researchers call this “Investigating Emergent Behaviour”. We call it “seeing what happens”. We’ve got plans to make one big “Robot Network” to choreograph the event and we might even add music. We’re planning events as part of the Hull City of Culture 2017. And we are meeting up every couple of weeks to build up our robot army. You can come along too. Sign up for our meetups [here](https://www.meetup.com/Hull-Digital-Hull-Open-Coffee)
 
-The best place to start is the overview in the documentation folder which you can find [here](https://github.com/HullPixelbot/Documentation).
+You can see a video of the robots in action [here](https://youtu.be/6K1MSUy3iAg)
 
-You can follw [@hullpixelbot](https://twitter.com/hullpixelbot) for pixelbot news and of course we need to have a plug for the blog from [Rob Miles](http://www.robmiles.com) at this point.
+For the entire GitHub site, including all the software, you can go [here](https://github.com/HullPixelbot)
+
+For techie details you can find an overview of the Hull Pixelbot design in the documentation folder which you can find [here](https://github.com/HullPixelbot/Documentation).
+
+For 3D printable files you can go [here](https://github.com/HullPixelbot/Hardware)
+
+You can follow [@hullpixelbot](https://twitter.com/hullpixelbot) for pixelbot news and of course we need to have a plug for the blog from [Rob Miles](http://www.robmiles.com) at this point.
