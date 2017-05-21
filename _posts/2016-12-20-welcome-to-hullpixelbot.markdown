@@ -17,6 +17,8 @@ We’ve got people trying to make a robot that will seek out the lightest part o
 
 But we want to make art with it. We want to get at least 100 Hull Pixelbots into an arena and set them running. Robotics researchers call this “Investigating Emergent Behaviour”. We call it “seeing what happens”. We’ve got plans to make one big “Robot Network” to choreograph the event and we might even add music. We’re planning events as part of the Hull City of Culture 2017. And we are meeting up every couple of weeks to build up our robot army. You can come along too. Sign up for our meetups [here](https://www.meetup.com/Hull-Digital-Hull-Open-Coffee)
 
+Rob Miles, the creator of Hull Pixelbot has a micro-site about the robots on his blog you can find [here](http://www.robmiles.com/hullpixelbot)
+
 You can see a video of the robots in action [here](https://youtu.be/6K1MSUy3iAg)
 
 For the entire GitHub site, including all the software, you can go [here](https://github.com/HullPixelbot)
@@ -25,4 +27,4 @@ For techie details you can find an overview of the Hull Pixelbot design in the d
 
 For 3D printable files you can go [here](https://github.com/HullPixelbot/Hardware)
 
-You can follow [@hullpixelbot](https://twitter.com/hullpixelbot) for pixelbot news and of course we need to have a plug for the blog from [Rob Miles](http://www.robmiles.com) at this point.
+You can follow [@hullpixelbot](https://twitter.com/hullpixelbot) for pixelbot news.
