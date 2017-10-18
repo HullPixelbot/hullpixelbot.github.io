@@ -4,7 +4,7 @@ title:  "Build a robot in a day"
 date:   2017-10-16 09:00:00 +0000
 categories: hullpixelbot
 ---
-![Pixelbot building]({{ site.url }}/assets/images/build.jpg)
+![Pixelbot building]({{ site.url }}/assets/images/building.jpg)
 
 
 If you're attending one of our "Build a robot in a day" events you'll need to bring along a laptop so that you can develop the programs to control the robot. You can use a Windows PC, MacBook or Linux device. You don't need to bring along anything else, as we provide all the tools and cables that you will need to create your robot. 
