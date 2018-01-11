@@ -13,7 +13,7 @@ The robot is controlled by an [Arduino](https://www.arduino.cc/) device which is
 
 You'll be using the Arduino Integrated Development Envirnonment (IDE) to create your programs and send them to the robot. We'll show you how to download the development environment when you arrive, but you can save a little time by installing the program in advance. You can download it [here](https://www.arduino.cc/en/Main/Software)
 
-We'll be providing full instructions. If you want to take a sneak peek at what you'll be doing, you can find the the latest version  [here](https://github.com/HullPixelbot/Learning/blob/master/Learning%20Robotics%20with%20the%20Hull%20Pixelbot/Build%20a%20robot%20in%20one%20day.pdf).
+We'll be providing full instructions. If you want to take a sneak peek at what you'll be doing, you can find the the latest version  [here](https://github.com/HullPixelbot/Learning/blob/master/Build%20a%20robot%20in%20one%20day.pdf).
 
 Please note that these instructions might change slightly as we improve the design.
 
