@@ -6,7 +6,7 @@ class Serial {
         this.lineBuffer = "";
     }
 
-    async connectToSerialPort() {
+    async connectToSerialPort(baudRate) {
 
         if (!"serial" in navigator) {
             this.port = null;
@@ -15,7 +15,7 @@ class Serial {
 
         try {
             this.port = await navigator.serial.requestPort();
-            await this.port.open({ baudRate: 115200, bufferSize: 10000 });
+            await this.port.open({ baudRate: baudRate, bufferSize: 10000 });
         }
         catch (error) {
             return "Serial port open failed:" + error.message;

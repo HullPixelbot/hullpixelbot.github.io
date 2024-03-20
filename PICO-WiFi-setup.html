@@ -79,7 +79,7 @@
             let wifipwd = wifipwdElement.value;
             let name = nameElement.value;
 
-            let reply = await serial.connectToSerialPort();
+            let reply = await serial.connectToSerialPort(115200);
 
             if (reply != "") {
                 alert(reply);

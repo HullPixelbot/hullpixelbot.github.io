@@ -94,11 +94,14 @@
 
         async function doConnectAction() {
 
+            let params = new URLSearchParams(window.location.search);
+            let baudRate = params.get('baudRate');
+
             let connectButton = document.getElementById('connectButton');
             switch (connectButton.textContent) {
                 case "Connect":
 
-                    let reply = await serial.connectToSerialPort();
+                    let reply = await serial.connectToSerialPort(baudRate);
 
                     if (reply != "") {
                         alert(reply);
