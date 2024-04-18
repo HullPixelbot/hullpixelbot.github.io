@@ -6,7 +6,7 @@ class Serial {
         this.lineBuffer = "";
     }
 
-    async connectToSerialPort(baudRate) {
+    async connectToSerialPort(baudRate, disconnectFunction) {
 
         if (!"serial" in navigator) {
             this.port = null;
@@ -16,6 +16,13 @@ class Serial {
         try {
             this.port = await navigator.serial.requestPort();
             await this.port.open({ baudRate: baudRate, bufferSize: 10000 });
+
+            // Listen for disconnect event
+            this.port.addEventListener('disconnect', async () => {
+                console.log('Device disconnected');
+                // Perform any necessary cleanup or handling here
+                await disconnectFunction();
+            });
         }
         catch (error) {
             return "Serial port open failed:" + error.message;
@@ -101,6 +108,7 @@ class Serial {
             }
         }
         await this.port.close();
+        console.log("Pumping ended - port closed");
     }
 
     async disconnect() {

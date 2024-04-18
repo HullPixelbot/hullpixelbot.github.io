@@ -92,16 +92,26 @@
             setActionButtonsDisabled(true);
         }
 
+
+        async function doDisconnectAction(){
+            console.log("Doing disconnect");
+            connectButton.textContent = "Connect";
+            setActionButtonsDisabled(true);
+        }
+
         async function doConnectAction() {
 
             let params = new URLSearchParams(window.location.search);
             let baudRate = params.get('baudRate');
+            if (!baudRate){
+                baudRate=1200;
+            }
 
             let connectButton = document.getElementById('connectButton');
             switch (connectButton.textContent) {
                 case "Connect":
 
-                    let reply = await serial.connectToSerialPort(baudRate);
+                    let reply = await serial.connectToSerialPort(baudRate,doDisconnectAction);
 
                     if (reply != "") {
                         alert(reply);
@@ -118,15 +128,14 @@
 
                     if (reply.startsWith("HullOS")) {
                         connectButton.textContent = "Disconnect";
+                        setActionButtonsDisabled(false);
                     }
-                    setActionButtonsDisabled(false);
                     break;
                 case "Connecting":
                     break;
                 case "Disconnect":
                     await serial.disconnect();
-                    connectButton.textContent = "Connect";
-                    setActionButtonsDisabled(true);
+                    await doDisconnectAction();
                     break;
             }
         }
