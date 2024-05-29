@@ -90,8 +90,19 @@
             }
             serial = new Serial();
             setActionButtonsDisabled(true);
-        }
 
+            let storedCode = localStorage.getItem("storedCode");
+            if (storedCode == null) {
+                logText("No program in browser storage");
+              storedCode = "";
+            }
+            else {
+                logText("Program recovered from browser storage\n");
+            }
+
+            let input = document.getElementById('textEdit');
+            input.value = storedCode;
+        }
 
         async function doDisconnectAction(){
             console.log("Doing disconnect");
@@ -110,6 +121,8 @@
             let connectButton = document.getElementById('connectButton');
             switch (connectButton.textContent) {
                 case "Connect":
+
+                    storeCode();
 
                     let reply = await serial.connectToSerialPort(baudRate,doDisconnectAction);
 
@@ -149,6 +162,7 @@
         }
 
         async function sendProgram(lines){
+
             await serial.sendCommand('begin');
 
             for(let i=0;i<lines.length;i++){
@@ -162,9 +176,19 @@
             return reply;
         }
 
-        async function doSend() {
+        function storeCode(){
             let input = document.getElementById('textEdit');
             let text = input.value;
+            localStorage.setItem("storedCode", text);
+        }
+
+        async function doSend() {
+
+            storeCode();
+
+            let input = document.getElementById('textEdit');
+            let text = input.value;
+
             let lines = text.split("\n");
             let result = await sendProgram(lines);
             if(result!="OK"){
@@ -182,6 +206,12 @@
 
         async function doViewProgram(){
             await serial.sendCommand('*ip');
+        }
+
+        function doClearProgram()
+        {
+            let input = document.getElementById('textEdit');
+            input.value = '';
         }
 
         let builtInProgramNo = 0;
